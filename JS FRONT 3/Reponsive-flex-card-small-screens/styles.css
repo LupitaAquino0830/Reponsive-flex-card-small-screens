@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+}
+
+body {
+    background: hsl(233, 47%, 7%);
+}
+
+
+#container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cardcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsl(244, 38%, 16%);
+    border-radius: 10px;
+    width: 1050px;
+    height: 445px;
+}
+
+#leftcard {
+    margin-left: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+}
+
+#rightcard {
+    margin-left: 40px;
+}
+
+#rightcard img {
+    padding-left: 35px;
+    margin-bottom: -5px;
+    border-radius: 10px;
+    
+}
+
+img{
+    filter: opacity(0.7) drop-shadow(0 0 0 rgb(128, 0, 128)); 
+    }
+
+#topcard {
+    color: hsl(0, 0%, 100%);
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+#topcard p {
+    margin: 0;
+    width: 400px;
+}
+
+#topcard span {
+    color: hsl(277, 64%, 61%);
+}
+
+#midseccard {
+    text-align: left;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 70px;
+    font-size: 14px;
+}
+
+#midseccard p {
+    width: 350px;
+}
+
+#botseccard h4 {
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+
+#midseccard p {
+    margin: 0;
+}
+
+#botseccard {
+    display: flex;
+    justify-content: space-around;
+}
+
+#botseccard div {
+    margin-right: 60px;
+}
+
+#botseccard p {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+@media screen and (max-width:375px) {
+    #cardcontainer {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 800px;
+    }
+     
+    #rightcard img {
+        width: 450px;
+        margin-top: -148px;
+        margin-bottom: 40px;
+    }
+
+    #botseccard {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #botseccard div {
+        margin-bottom: 25px;
+    }
+
+}
